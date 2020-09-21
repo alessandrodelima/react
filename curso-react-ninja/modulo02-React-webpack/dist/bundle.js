@@ -44,7 +44,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	console.log('Webpack está funcionando!dfdf!');
+	console.log('Webpack está funcionando!');
 
 /***/ })
 /******/ ]);
