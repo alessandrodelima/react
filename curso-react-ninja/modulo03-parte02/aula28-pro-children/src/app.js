@@ -3,15 +3,16 @@
 import React, { Component } from 'react'
 import Title from './title'
 import Square from './square'
+import Button from './button'
 
 class App extends Component {
   render () {
     return (
       <div className='container'>
-        {['blue', 'red', 'green', 'yellow'].map((square, index) => (
-          <Square   key={index} color={square} />
-        ))}
-          <Title name='Alessandro' />
+        <Button>
+          <span>Texto do span </span>
+          Texto Filho
+        </Button>
       </div>
     )
   }
