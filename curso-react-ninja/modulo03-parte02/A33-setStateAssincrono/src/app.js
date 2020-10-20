@@ -18,19 +18,19 @@ class App extends Component {
             type='checkbox'
             checked={this.state.checked}
             onChange={() => {
-              this.setState({ 
+              this.setState({
                 checked: !this.state.checked
               }, () => {
                 this.setState({
                   showContent: this.state.checked
                 })
               }) // setState  é uma função assincrona 
-             
+
             }}
           />Mostrar conteúdo
-        
+
         </label>
-        
+
         {this.state.showContent && <div>Olha eu aqui!</div>}
       </div>
     )
