@@ -2,6 +2,7 @@ import React from 'react';
 export default function ComParametro(props) {
   //const sub = props.subtitulo;
   const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação';
+  //const notaInt = Math.ceil(props.nota)
   console.log(props);
   return (
     <div>
@@ -12,7 +13,8 @@ export default function ComParametro(props) {
         <strong> 
           { props.aluno } </strong> 
           tem nota 
-           <strong> { props.nota } </strong>
+          <strong> { props.nota } </strong>
+           {/* <strong> { props.notaInt } </strong> */}
           e foi 
           <strong> { status }</strong>!
       </p>
